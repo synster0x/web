@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+<body>
+<!-- HEADER -->
+<header>
+<a href="#" class="logo">Logo</a>
+<div class="menu-toggle"></div>
+<nav>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="file:///C:/Users/Shyam/Desktop/sarun/class%2011/about.html">About</a></li>
+       <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="clearfix"></div>
+</header>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+             $('nav').toggleClass('active')
+        })
+    })
+    </script>
+
+
+<!-- BODY -->
+
+   <section class="zoom">
+       <img src="./pic/mountain1.png" id="layer1">
+    <img src="./pic/mountain2.png" id="layer2">
+    <img src="./pic/text.png" id="text">
+   </section>
+   <section class="content">
+       
+    <h2 class="h2">VISIT NEPAL 2020</h2>
+       
+       <div class="banner"><div class="bann">
+        
+        <img src="./pic/img.jpg" height="240px">
+       </div>
+        <img src="./pic/flag.png" height="240px">
+           <p class="para">Welcome visitors to celebrate the year 2020 which is chosen as national tourism year of Nepal after the year 2011 which
+        was the primary authority tourism year of new Federal Democratic Republic of Nepal. The government of Nepal has declared that the 2020 has been deducted due to the covid-19  The government and tourism
+        department of Nepal authoritatively reported that Nepal will take year 2020 as "Visit Nepal 2020", a year committed to
+        tourism industry of Nepal with vision of making a reasonable brand picture of Nepal as travel and vacationer
+        destination, backing up the tourism foundations of Nepal, enhance the growth of tourism industry, and enhance locale
+        tourism as supportable industry. The legislature has wanted to accommodate more than one million visitors amid the year
+        of “Visit Nepal 2020”.</p> </div>  </section>
+       <script type="text/Javascript">
+    var layer1 = document.getElementById('layer1')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer1.style.width = (100 + scroll/5) + '%';
+    });
+
+    var layer2 = document.getElementById('layer2')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        layer2.style.left = scroll/50 + '%';
+    });
+
+    var text = document.getElementById('text')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        text.style.top =  - scroll/20 + '%';
+    });
+    </script>
+   <div class="footer">
+    <div class="footer-content">
+<div class="footer-section about">
+<h2 class="logo-text"><span>VISITNEPAL</span>2020</h2><br>
+<p>Coming to Nepal is coming to an experience that is only yours. From the remotest corners to the urban landscape, Nepal
+    Nepal is one of the peaceful place in the world.
+embodies a sensory experience of colours, sounds, sights and tastes. Visit Nepal welcomes you to life’s amazing moments.</p>
+
+
+<div class="contact">
+    <span><i class="fas-phone"></i>&nbsp; +977-9815427160</span>
+  <span><i class="fas-envelope"></i>&nbsp; magarsarun81@gmail.com</span>
+</div>
+<div class="socials">
+<a href="https://www.facebook.com/profile.php?id=100072608715461"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/magar_sarun/"><i class="fab fa-instagram"></i></a>
+<a href="https://www.youtube.com/channel/UC-_ozMggwUMpTrUSXkSmrkw"><i class="fab fa-youtube"></i></a>
+</div>
+
+</div>
+<div class="footer-section links">
+<h2>Quick Links</h2>
+<br>
+<ul>
+     <a href=""><li>Events</li></a>
+    <a href="">
+        <li>Events</li>
+    </a>
+</ul>
+</div>
+<div class="footer-section contact-form">
+<h2>Contact us</h2><br>
+<form action="assignment.html" method="post"><input type="email" name="email" class="text-input contact-input" placeholder="your email address..."> <br>
+<textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br><button type="submit" class="btn btn-big"><i class="fas fa-envelope"></i> Send</button></form>
+
+</div>
+
+    </div>
+    <div class="footer-bottom">
+    &copy;VISITNEPAL2020||Designed by Sarun Thapa Magar
+</div>
+</div>
+
+</body>
+
+</html>
